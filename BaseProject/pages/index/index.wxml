@@ -1,0 +1,17 @@
+<!--index.wxml-->
+
+<view class="container">
+    <view class="list-item" wx:for="{{dataList}}" wx:key="{{item.PROJECT_ID}}">
+      <view class="list-img-show" wx:if="{{item.isBig == 1}}">
+          <img src="{{imageBaseUrl + item.bigLogo}}" model="widthFit" />
+      </view>
+      
+      <view class="list-show" wx:else >
+        <img src="{{imageBaseUrl + item.LOGO}}"  model="widthFit" />
+        <text>{{item.TITLE}}</text>
+        <text>{{item.CONTENT}}</text>
+      </view>
+      
+    </view>
+    
+</view>
