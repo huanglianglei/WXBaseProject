@@ -1,33 +1,18 @@
-// pages/posts/posts.js
-
-// var postData = require('../../data/posts-data.js')
-import {postList} from "../../data/posts-data.js"
+// pages/posts-detail/posts-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    posts:postList
+
   },
-  /**
-   * 进入文章详情页面
-   */
-  goToDetail(e){
-    const postId = e.currentTarget.dataset.postId
-    wx.navigateTo({
-      url: '/pages/posts-detail/posts-detail?postId='+postId,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    // this.setData({
-    //   posts:postData.postList
-    // })
-
+    console.log(options)
   },
 
   /**

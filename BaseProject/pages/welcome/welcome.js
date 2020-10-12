@@ -65,7 +65,7 @@ Page({
   },
   startHandle(e){
     console.log("开启小程序之旅")
-    wx.redirectTo({
+    wx.switchTab({
       url: '/pages/posts/posts',
     })
   }

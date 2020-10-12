@@ -11,7 +11,13 @@
       <image src="/images/wx.png" mode="widthFix"></image>
     </swiper-item>
   </swiper>
-  <view class="post-view">
-
+  <view class="post-view" wx:for="{{posts}}" wx:key="postId" bindtap="goToDetail" data-post-id="{{item.postId}}">
+      <view class="post-user">
+        <image src="{{item.avatar}}"></image>
+        <text>{{item.date}}</text>
+      </view>
+      <text class="post-title">{{item.title}}</text>
+      <image class="post-image" src="{{item.imgSrc}}" mode="widthFix"></image>
+      <text class="post-content">{{item.content}}</text>
   </view>
 </view>
