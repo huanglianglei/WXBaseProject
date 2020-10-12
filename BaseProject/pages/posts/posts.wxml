@@ -1,0 +1,17 @@
+<!--pages/posts/posts.wxml-->
+<view class="container">
+  <swiper indicator-dots="true" autoplay circular>
+    <swiper-item>
+      <image src="/images/iqiyi.png" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.png" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/wx.png" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+  <view class="post-view">
+
+  </view>
+</view>

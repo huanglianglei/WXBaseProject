@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container swiper {
+  width: 100%;
+  height: 320rpx;
+}
+.container image {
+  width: 100%;
+  height: 100%;
+}
