@@ -1,8 +1,10 @@
-const  ApiBaseUrl = 'http://zszc.hanyu365.com.cn:8080/';
+const  ApiBaseUrl = 'http://t.talelin.com/';
 module.exports = {
   ApiBaseUrl,
-  ListDataApi: ApiBaseUrl + 'zszc/app_recommend',
-  HomeDataApi: ApiBaseUrl + 'zszc/app_home/getHome'
+  //正在热映
+  NowMovieDataApi: ApiBaseUrl + 'v2/movie/in_theaters',
+  ComingMovieDataApi: ApiBaseUrl + 'v2/movie/coming_soon',
+  Top250MovieDataApi: ApiBaseUrl + 'v2/movie/top250',
 };
 
 

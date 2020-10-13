@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "move-item":"/components/move-item/move-item"
+  },
+  "navigationBarTitleText": "电影"
 }

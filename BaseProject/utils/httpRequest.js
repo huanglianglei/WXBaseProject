@@ -25,17 +25,18 @@ function request(url,data = {},method = "GET"){
         'Content-Type':contentType
       },
       success:(res)=>{
-        if (res.statusCode == 200) {
-          if(res.data.response == 0){
-            resolve(res.data);
-          }
-          else{
-            reject(res.data.desc);
-          }
-        }
-        else{
-          reject("请求失败：" + res.statusCode);
-        }
+        // if (res.statusCode == 200) {
+        //   if(res.data.response == 0){
+        //     resolve(res.data);
+        //   }
+        //   else{
+        //     reject(res.data.desc);
+        //   }
+        // }
+        // else{
+        //   reject("请求失败：" + res.statusCode);
+        // }
+        resolve(res.data);
       },fail:(error)=>{
         reject("服务器连接异常，请检查网络再试");
       }

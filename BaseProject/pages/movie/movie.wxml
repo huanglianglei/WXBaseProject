@@ -1,2 +1,30 @@
 <!--pages/movie/movie.wxml-->
-<text>pages/movie/movie.wxml</text>
+<view class="container">
+	<view class="move-list">
+		<view class="header-view">
+      <text>正在热映</text>
+      <text bindtap="showMoreMovie" data-type="{{0}}">更多></text>
+		</view>
+		<view class="move-item-bgview">
+			<move-item bind:showDetail="showMovieDetail" movie="{{item}}"  wx:for="{{dataList1}}" wx:key="index"></move-item>
+		</view>
+	</view>
+  <view class="move-list">
+		<view class="header-view">
+      <text>即将上映</text>
+      <text bindtap="showMoreMovie" data-type="{{1}}">更多></text>
+		</view>
+		<view class="move-item-bgview">
+			<move-item bind:showDetail="showMovieDetail" movie="{{item}}"  wx:for="{{dataList2}}" wx:key="index"></move-item>
+		</view>
+	</view>
+  <view class="move-list">
+		<view class="header-view">
+      <text>Top250</text>
+      <text bindtap="showMoreMovie" data-type="{{2}}">更多></text>
+		</view>
+		<view class="move-item-bgview">
+			<move-item bind:showDetail="showMovieDetail" movie="{{item}}"  wx:for="{{dataList3}}" wx:key="index"></move-item>
+		</view>
+	</view>
+</view>

@@ -1,1 +1,30 @@
 /* pages/movie/movie.wxss */
+
+.move-list{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 10px solid #f5f5f5;
+  padding-bottom: 20rpx;
+}
+.move-list .header-view{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  height: 72rpx;
+}
+.header-view text:nth-child(1){
+  color: #333;
+  font-size: 28rpx;
+}
+.header-view text:nth-child(2){
+  color:blue;
+  font-size: 24rpx;
+}
+.move-item-bgview{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0 30rpx;
+  justify-content: space-between;
+}

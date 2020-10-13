@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/welcome/welcome",
     "pages/posts/posts",
     "pages/movie/movie",
-    "pages/posts-detail/posts-detail"
+    "pages/posts-detail/posts-detail",
+    "pages/more-movie/more-movie",
+    "pages/movie-detail/movie-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

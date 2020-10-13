@@ -1,0 +1,9 @@
+<!--components/move-item/move-item.wxml-->
+<view class="move-item-view" bindtap="onTap" data-movie-id="{{movie.id}}" data-movie-title="{{movie.original_title}}">
+	<image src="{{movie.images.large}}" mode="aspectFill"></image>
+	<text>{{movie.original_title}}</text>
+	<view class="star-view">
+		<l-star score="{{movie.rating.average/2}}" size="22" disabled="true" ></l-star>
+		<text>{{movie.rating.average}}</text>
+	</view>
+</view>
